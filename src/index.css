@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: white;
+  background-color: black;
+  font-family: "outfit", sans-serif;
+}
+
+@keyframes arrow-motion {
+  0% {
+      transform: translateY(0px);
+  }
+
+  100% {
+      transform: translateY(7px);
+  }
+}

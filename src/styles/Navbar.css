@@ -1,0 +1,166 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 100px;
+}
+
+.navbar h1 {
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.navbar h1 span {
+    background-image: linear-gradient(45deg, rgba(255, 72, 72, 0.916), rgb(210, 123, 0));
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 50px;
+    font-size: 1.2rem;
+}
+
+.nav-menu li {
+    cursor: pointer;
+    position: relative;
+}
+
+.raise {
+    transition: transform 0.25s;
+}
+
+.raise:hover {
+    transform: translateY(1px);
+}
+
+.nav-menu li::after {
+    content: "";
+    height: 3.5px;
+    width: 0;
+    border-radius: 2px;
+    background: rgb(255, 86, 44);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.25s;
+    transition-delay: 0.02s;
+}
+
+.nav-menu li:hover::after {
+    width: 100%;
+}
+
+.contact-me {
+    text-align: center;
+    padding: 10px 15px;
+    border: 2px solid rgb(255, 72, 27);
+    border-radius: 15px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: monospace, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-me span {
+    background: linear-gradient(60deg, rgb(255, 72, 27), rgb(210, 122, 0));
+    height: 100%;
+    width: 0;
+    border-radius: 13px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.25s ease-in-out;
+}
+
+.contact-me:hover span {
+    width: 100%;
+}
+
+.contact-me:hover {
+    border-color: transparent;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.active {
+    color: rgb(255, 184, 53);
+}
+
+.menu-close-icon {
+    font-size: 2.5rem;
+    display: none;
+    cursor: default;
+}
+
+.menu-open-icon {
+    font-size: 2.5rem;
+    display: none;
+    cursor: default;
+}
+
+@media (max-width:768px) {
+    .navbar {
+        margin: 20px 30px;
+    }
+
+    .contact-me {
+        display: none;
+    }
+
+    .menu-open-icon {
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+
+    .menu-close-icon {
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        top: 0;
+        gap: 30px;
+        background-color: #1F0016;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.4s;
+        right: -350px;
+    }
+
+    .nav-menu li {
+        font-size: 1.8rem;
+        margin-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1150px) {
+    .contact-me {
+        display: none;
+    }
+
+    .navbar {
+        margin: 20px 50px;
+    }
+}

@@ -1,0 +1,62 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    border-left: 5px solid rgb(255, 76, 32);
+    border-right: 5px solid rgb(255, 76, 32);
+    border-radius: 40px;
+    margin: 50px;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.about .title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.about .title span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(255, 76, 32);
+    animation: arrow-motion 2s ease-in-out alternate infinite;
+}
+
+
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-me h2 {
+    background-image: linear-gradient(45deg, rgba(255, 72, 72, 0.916), rgb(210, 123, 0));
+    background-clip: text;
+    color: transparent;
+}
+
+.about-me p {
+    width: 65%;
+    color: rgba(255, 255, 255, 0.814);
+    line-height: 20px;
+    word-spacing: 5px;
+}
+
+@media (max-width: 768px) {
+    .about {
+        gap: 80px;
+        margin: 50px 10px;
+    }
+
+    .about-me p {
+        width: 90%;
+        font-size: 1rem;
+        line-height: 24px;
+    }
+}
