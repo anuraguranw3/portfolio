@@ -92,6 +92,7 @@
     margin-bottom: 50px;
     cursor: pointer;
     transition: 0.3s;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .contact-submit:hover {
