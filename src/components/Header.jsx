@@ -53,7 +53,7 @@ const Header = () => {
 
     } else {
       gsap.to(mobileMenuRef.current, {
-        top: "-100%",
+        top: "-150%",
         opacity: 0,
         duration: 0.8,
         ease: "power3.in",
@@ -94,7 +94,7 @@ const Header = () => {
             toggleMenu();
           }
         }}
-        ref={mobileMenuRef} className="w-full h-screen p-3 fixed top-[-100%] left-0 bg-blue-950 overflow-hidden flex flex-col justify-center items-center lg:hidden">
+        ref={mobileMenuRef} className="w-full h-screen p-3 fixed top-[-150%] left-0 bg-blue-950 overflow-hidden flex flex-col justify-center items-center lg:hidden">
 
         <ul className="p-5 lg:hidden gap-7 text-2xl font-bold font-serif flex flex-col items-center">
           <li className="py-1 px-2 rounded hover:text-black hover:bg-white cursor-pointer">Home</li>
