@@ -1,21 +1,21 @@
+import gsap from "gsap";
 import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Hero from "./components/Hero";
-import MyWork from "./components/MyWork";
-import Navbar from "./components/Navbar";
+import { ScrollTrigger } from "gsap/all";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 const App = () => {
+
+  gsap.registerPlugin(ScrollTrigger);
   return (
     <>
-      <Navbar />
+      <Header />
       <Hero />
       <About />
       <Skills />
-      <MyWork />
-      <Contact />
-      <Footer />
+      <Projects />
     </>
   );
 };
