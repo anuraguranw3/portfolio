@@ -81,13 +81,13 @@ const Projects = () => {
               >{project.name}</h3>
               <div className="p-2 flex gap-2 items-center">
                 <a
-                  className="text-2xl p-5"
+                  className="text-3xl"
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 ><FaGithub /></a>
                 <a
-                  className="text-2xl p-5"
+                  className="text-3xl"
                   href={project.demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
