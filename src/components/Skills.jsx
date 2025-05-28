@@ -59,7 +59,7 @@ const Skills = () => {
 
   });
 
-  
+
 
   return (
     <div className="skills-section w-full mt-24 flex flex-col items-center p-3">
@@ -75,21 +75,6 @@ const Skills = () => {
           <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
             <i className="devicon-react-original" />
             <h4>React JS</h4>
-          </li>
-
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
-            <i className="devicon-html5-plain" />
-            <h4>HTML5</h4>
-          </li>
-
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
-            <i className="devicon-css3-plain" />
-            <h4>CSS3</h4>
-          </li>
-
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
-            <i className="devicon-tailwindcss-original" />
-            <h4>Tailwind CSS</h4>
           </li>
 
           <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
@@ -110,6 +95,21 @@ const Skills = () => {
           <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
             <i className="devicon-prisma-original" />
             <h4>Prisma</h4>
+          </li>
+
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
+            <i className="devicon-html5-plain" />
+            <h4>HTML5</h4>
+          </li>
+
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
+            <i className="devicon-css3-plain" />
+            <h4>CSS3</h4>
+          </li>
+
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
+            <i className="devicon-tailwindcss-original" />
+            <h4>Tailwind CSS</h4>
           </li>
 
         </ul>

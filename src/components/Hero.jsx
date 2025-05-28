@@ -102,7 +102,7 @@ const Hero = () => {
             href="https://github.com/anuraguranw3"
             target="_blank"
             rel="noopener noreferrer"
-          ><FaGithub className="" /></a>
+          ><FaGithub /></a>
         </div>
       </div>
       <button
