@@ -77,7 +77,7 @@ const Projects = () => {
                 alt={project.name}
               />
               <h3
-                className="text-lg lg:text-xl p-2"
+                className="text-xl p-2"
               >{project.name}</h3>
               <div className="p-2 flex gap-2 items-center">
                 <a
