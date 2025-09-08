@@ -63,7 +63,7 @@ const Skills = () => {
 
   return (
     <div className="skills-section w-full mt-24 flex flex-col items-center p-3">
-      <h3 className="text-3xl font-bold text-gray-300 pt-5 pb-7">Skills</h3>
+      <h3 className="text-3xl font-bold text-gray-400 pt-5 pb-7">Skills</h3>
       <div className="w-full flex flex-col gap-5 p-1">
         <ul className="skills-set1 w-full md:w-[95%] p-2 mx-auto gap-3 md:gap-4 lg:gap-6 flex-row flex flex-wrap justify-center text-lg sm:text-xl md:text-2xl lg:text-3xl">
 
@@ -116,61 +116,61 @@ const Skills = () => {
 
         <ul className="skills-set2 w-full md:w-[95%] p-2 mx-auto flex flex-wrap gap-3 md:gap-4 lg:gap-5 justify-center text-md md:text-xl lg:text-2xl font-semibold">
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >RESTful APIs</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >JWT - Json Web Token</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >Redux</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >Passport JS</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >Bcrypt JS</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >Axios</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >Context API</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >EJS</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >pg</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >Multer</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >Git</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >GitHub</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >VS Code</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >Postman</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >pgAdmin</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >Netlify</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >Render</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >Aiven</li>
 
-          <li className="bg-gray-800 py-2 px-3 cursor-default border-x-4 border-y-2 border-gray-800 rounded-lg"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
           >Cloudinary</li>
 
         </ul>

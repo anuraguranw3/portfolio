@@ -74,16 +74,16 @@ const Header = () => {
   });
 
   return (
-    <header className="w-full h-16 fixed top-0 left-0 flex justify-end p-4 items-center lg:justify-center bg-black z-50">
+    <header className="w-full h-16 fixed top-0 left-0 flex justify-end p-4 items-center lg:justify-center bg-white z-50 shadow-md">
       <ul ref={ulRef} className="hidden lg:flex gap-7 text-lg font-bold font-serif">
-        <li className="py-1 px-2 rounded hover:text-black hover:bg-white cursor-pointer">Home</li>
-        <li className="py-1 px-2 rounded hover:text-black hover:bg-white cursor-pointer">About</li>
-        <li className="py-1 px-2 rounded hover:text-black hover:bg-white cursor-pointer">Skills</li>
-        <li className="py-1 px-2 rounded hover:text-black hover:bg-white cursor-pointer">Projects</li>
+        <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">Home</li>
+        <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">About</li>
+        <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">Skills</li>
+        <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">Projects</li>
       </ul>
       <button
         onClick={toggleMenu}
-        className="text-4xl lg:hidden mr-3 border-2 border-transparent rounded active:border-white"
+        className="text-4xl lg:hidden mr-3 border-2 border-transparent rounded active:border-black/60"
       >
         <CgMenuRightAlt />
       </button>
@@ -94,17 +94,17 @@ const Header = () => {
             toggleMenu();
           }
         }}
-        ref={mobileMenuRef} className="w-full h-screen p-3 fixed top-[-150%] left-0 bg-blue-950 overflow-hidden flex flex-col justify-center items-center lg:hidden">
+        ref={mobileMenuRef} className="w-full h-screen p-3 fixed top-[-150%] left-0 bg-white/60 backdrop-blur-md overflow-hidden flex flex-col justify-center items-center lg:hidden">
 
         <ul className="p-5 lg:hidden gap-7 text-2xl font-bold font-serif flex flex-col items-center">
-          <li className="py-1 px-2 rounded hover:text-black hover:bg-white cursor-pointer">Home</li>
-          <li className="py-1 px-2 rounded hover:text-black hover:bg-white cursor-pointer">About</li>
-          <li className="py-1 px-2 rounded hover:text-black hover:bg-white cursor-pointer">Skills</li>
-          <li className="py-1 px-2 rounded hover:text-black hover:bg-white cursor-pointer">Projects</li>
+          <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">Home</li>
+          <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">About</li>
+          <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">Skills</li>
+          <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">Projects</li>
         </ul>
         <button
           onClick={toggleMenu}
-          className="text-4xl lg:hidden mt-8 border-2 border-transparent rounded active:border-white"
+          className="text-4xl lg:hidden mt-8 border-2 border-transparent rounded active:border-black/60"
         >
           <GrClose />
         </button>

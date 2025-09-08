@@ -36,37 +36,37 @@ const Hero = () => {
       duration: 0.8
     });
 
-    tl.to(".hero-section h1", {
-      color: "yellow",
-      repeat: -1,
-      yoyo: true,
-      duration: 1.5,
-      ease: "power1.inOut",
-    });
+    // tl.to(".hero-section h1", {
+    //   color: "yellow",
+    //   repeat: -1,
+    //   yoyo: true,
+    //   duration: 1.5,
+    //   ease: "power1.inOut",
+    // });
 
-    tl.to(".hero-section h3", {
-      color: "yellow",
-      repeat: -1,
-      yoyo: true,
-      duration: 1.5,
-      ease: "power1.inOut",
-    });
+    // tl.to(".hero-section h3", {
+    //   color: "yellow",
+    //   repeat: -1,
+    //   yoyo: true,
+    //   duration: 1.5,
+    //   ease: "power1.inOut",
+    // });
 
-    tl.to(".social-icon", {
-      scale: 1.1,
-      repeat: -1,
-      yoyo: true,
-      ease: "sine.inOut",
-      duration: 1.5,
-    });
+    // tl.to(".social-icon", {
+    //   scale: 1.1,
+    //   repeat: -1,
+    //   yoyo: true,
+    //   ease: "sine.inOut",
+    //   duration: 1.5,
+    // });
 
-    gsap.to("#scroll-btn", {
-      y: 10,
-      repeat: -1,
-      yoyo: true,
-      duration: 1.5,
-      ease: "power1.inOut",
-    });
+    // gsap.to("#scroll-btn", {
+    //   y: 10,
+    //   repeat: -1,
+    //   yoyo: true,
+    //   duration: 1.5,
+    //   ease: "power1.inOut",
+    // });
 
   });
 
@@ -80,25 +80,25 @@ const Hero = () => {
               fontSize: "clamp(1.5rem, 3.15vw, 3rem)",
               fontFamily: '"Press Start 2P", system-ui'
             }}
-            className="max-w-[90%] text-center font-bold"
+            className="max-w-[90%] text-center font-bold shadow-sm py-2 px-4 rounded-lg shadow-black/70"
           >Hi, I&apos;m Anurag Uranw,</h1>
           <h3
             style={{
               fontSize: "clamp(1rem, 2vw, 2rem)",
               fontFamily: '"Press Start 2P", system-ui'
             }}
-            className="max-w-[90%] text-center mt-4 font-bold"
+            className="max-w-[90%] text-center mt-4 font-bold shadow-sm py-2 px-4 rounded-lg shadow-black/70"
           >a Full Stack Developer</h3>
         </div>
-        <div className="w-full p-3 flex justify-center items-center gap-3">
+        <div className="w-full p-3 flex justify-center items-center gap-3 ">
           <a
-            className="social-icon text-3xl p-1 rounded-md hover:bg-white hover:text-black"
+            className="social-icon text-3xl p-1 shadow-sm shadow-black rounded-lg hover:text-white hover:bg-black"
             href="https://www.linkedin.com/in/anurag-uranw-b07534267/"
             target="_blank"
             rel="noopener noreferrer"
           ><FaLinkedin /></a>
           <a
-            className="social-icon text-3xl p-1 rounded-md hover:bg-white hover:text-black"
+            className="social-icon text-3xl p-1 shadow-sm shadow-black rounded-lg hover:text-white hover:bg-black"
             href="https://github.com/anuraguranw3"
             target="_blank"
             rel="noopener noreferrer"

@@ -13,7 +13,7 @@ const App = () => {
     <>
       <Header />
       <Hero />
-      <About />
+      {/* <About /> */}
       <Skills />
       <Projects />
     </>

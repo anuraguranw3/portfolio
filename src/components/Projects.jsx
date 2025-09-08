@@ -63,7 +63,7 @@ const Projects = () => {
 
   return (
     <div className="projects-section w-full mt-20 p-3 flex flex-col items-center">
-      <h3 className="text-3xl font-bold text-gray-300 pb-7">Projects</h3>
+      <h3 className="text-3xl font-bold text-gray-400 pb-7">Projects</h3>
       <div className="w-full p-1 flex justify-evenly gap-5 flex-wrap">
         {
           projects.map((project) =>
