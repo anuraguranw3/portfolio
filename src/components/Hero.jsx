@@ -13,7 +13,7 @@ const Hero = () => {
       y: -20,
       duration: 0.5,
       opacity: 0,
-      delay: 1,
+      delay: 0.5,
     });
 
     tl.from(".hero-section h3", {

@@ -96,11 +96,11 @@ const Header = () => {
         }}
         ref={mobileMenuRef} className="w-full h-screen p-3 fixed top-[-150%] left-0 bg-white/60 backdrop-blur-md overflow-hidden flex flex-col justify-center items-center lg:hidden">
 
-        <ul className="p-5 lg:hidden gap-7 text-2xl font-bold font-serif flex flex-col items-center">
-          <li className="py-1 px-2 rounded bg-white shadow-md shadow-black hover:text-white hover:bg-black cursor-pointer">Home</li>
+        <ul className="p-5 lg:hidden gap-7 text-2xl font-bold font-serif flex flex-col items-center bg-white shadow-md shadow-black/50 rounded-md">
+          <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">Home</li>
           {/* <li className="py-1 px-2 rounded bg-white shadow-md shadow-black hover:text-white hover:bg-black cursor-pointer">About</li> */}
-          <li className="py-1 px-2 rounded bg-white shadow-md shadow-black hover:text-white hover:bg-black cursor-pointer">Skills</li>
-          <li className="py-1 px-2 rounded bg-white shadow-md shadow-black hover:text-white hover:bg-black cursor-pointer">Projects</li>
+          <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">Skills</li>
+          <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">Projects</li>
         </ul>
         <button
           onClick={toggleMenu}
