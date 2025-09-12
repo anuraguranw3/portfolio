@@ -11,7 +11,7 @@ const Hero = () => {
 
     tl.from(".hero-section h1", {
       y: -20,
-      duration: 0.8,
+      duration: 0.5,
       opacity: 0,
       delay: 1,
     });
@@ -19,14 +19,14 @@ const Hero = () => {
     tl.from(".hero-section h3", {
       opacity: 0,
       y: -10,
-      duration: 0.8
+      duration: 0.4
     });
 
     tl.from(".social-icon", {
       opacity: 0,
       scale: 0,
       stagger: 0.2,
-      duration: 0.6,
+      duration: 0.5,
       ease: "back.out(1.7)",
     });
 

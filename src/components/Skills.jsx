@@ -43,19 +43,19 @@ const Skills = () => {
       }
     });
 
-    gsap.to(".skills-set1 li, .skills-set2 li", {
-      boxShadow: "0 0 20px rgba(255, 255, 255, 0.8)",
-      borderColor: "white",
-      repeat: -1,
-      yoyo: true,
-      ease: "sine.inOut",
-      duration: 0.6,
-      stagger: {
-        each: 0.1,
-        repeat: -1,
-        yoyo: true,
-      },
-    });
+    // gsap.to(".skills-set1 li, .skills-set2 li", {
+    //   boxShadow: "0 0 20px rgba(255, 255, 255, 0.8)",
+    //   borderColor: "white",
+    //   repeat: -1,
+    //   yoyo: true,
+    //   ease: "sine.inOut",
+    //   duration: 5,
+    //   stagger: {
+    //     each: 0.1,
+    //     repeat: -1,
+    //     yoyo: true,
+    //   },
+    // });
 
   });
 
@@ -67,47 +67,47 @@ const Skills = () => {
       <div className="w-full flex flex-col gap-5 p-1">
         <ul className="skills-set1 w-full md:w-[95%] p-2 mx-auto gap-3 md:gap-4 lg:gap-6 flex-row flex flex-wrap justify-center text-lg sm:text-xl md:text-2xl lg:text-3xl">
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white">
             <i className="devicon-javascript-plain" />
             <h4>JavaScript</h4>
           </li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white">
             <i className="devicon-react-original" />
             <h4>React JS</h4>
           </li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white">
             <i className="devicon-nodejs-plain-wordmark" />
             <h4>Node JS</h4>
           </li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white">
             <i className="devicon-express-original" />
             <h4>Express JS</h4>
           </li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white">
             <i className="devicon-postgresql-plain" />
             <h4>PostgresSQL</h4>
           </li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white">
             <i className="devicon-prisma-original" />
             <h4>Prisma</h4>
           </li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white">
             <i className="devicon-html5-plain" />
             <h4>HTML5</h4>
           </li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white">
             <i className="devicon-css3-plain" />
             <h4>CSS3</h4>
           </li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default">
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white">
             <i className="devicon-tailwindcss-original" />
             <h4>Tailwind CSS</h4>
           </li>
@@ -116,61 +116,61 @@ const Skills = () => {
 
         <ul className="skills-set2 w-full md:w-[95%] p-2 mx-auto flex flex-wrap gap-3 md:gap-4 lg:gap-5 justify-center text-md md:text-xl lg:text-2xl font-semibold">
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >RESTful APIs</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >JWT - Json Web Token</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >Redux</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >Passport JS</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >Bcrypt JS</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >Axios</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >Context API</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >EJS</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >pg</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >Multer</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >Git</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >GitHub</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >VS Code</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >Postman</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >pgAdmin</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >Netlify</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >Render</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >Aiven</li>
 
-          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default"
+          <li className="flex items-center gap-3 border-x-4 border-y-2 border-gray-600 rounded-lg p-2 cursor-default hover:bg-gray-800 hover:text-white"
           >Cloudinary</li>
 
         </ul>
