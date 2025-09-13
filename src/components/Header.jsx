@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { useRef, useState } from "react";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { GrClose } from "react-icons/gr";
+import { Link } from "react-scroll";
 
 
 const Header = () => {
@@ -22,7 +23,7 @@ const Header = () => {
         {
           top: "0%",
           opacity: 1,
-          duration: 0.3,
+          duration: 0.8,
           ease: "power3.out",
         }
       );
@@ -76,10 +77,15 @@ const Header = () => {
   return (
     <header className="w-full h-16 fixed top-0 left-0 flex justify-end p-4 items-center lg:justify-center bg-white z-50 shadow-md">
       <ul ref={ulRef} className="hidden lg:flex gap-7 text-lg font-bold font-serif">
-        <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">Home</li>
-        {/* <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">About</li> */}
-        <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">Skills</li>
-        <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">Projects</li>
+        <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">
+          <Link to="home" smooth={true} duration={500} offset={-70}>Home</Link>
+        </li>
+        <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">
+          <Link to="skills" smooth={true} duration={500} offset={-60}>Skills</Link>
+        </li>
+        <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">
+          <Link to="projects" smooth={true} duration={500} offset={-60}>Projects</Link>
+        </li>
       </ul>
       <button
         onClick={toggleMenu}
@@ -96,11 +102,16 @@ const Header = () => {
         }}
         ref={mobileMenuRef} className="w-full h-screen p-3 fixed top-[-150%] left-0 bg-white/60 backdrop-blur-md overflow-hidden flex flex-col justify-center items-center lg:hidden">
 
-        <ul className="p-5 lg:hidden gap-7 text-2xl font-bold font-serif flex flex-col items-center bg-white shadow-md shadow-black/50 rounded-md">
-          <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">Home</li>
-          {/* <li className="py-1 px-2 rounded bg-white shadow-md shadow-black hover:text-white hover:bg-black cursor-pointer">About</li> */}
-          <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">Skills</li>
-          <li className="py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">Projects</li>
+        <ul className="p-5 lg:hidden gap-7 text-2xl font-bold font-serif flex flex-col items-center text-center bg-white shadow-md shadow-black/50 rounded-md">
+          <li className="w-full py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">
+            <Link onClick={toggleMenu} to="home" smooth={true} duration={500} offset={-70}>Home</Link>
+          </li>
+          <li className="w-full py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">
+            <Link onClick={toggleMenu} to="skills" smooth={true} duration={500} offset={-60}>Skills</Link>
+          </li>
+          <li className="w-full py-1 px-2 rounded hover:text-white hover:bg-black cursor-pointer">
+            <Link onClick={toggleMenu} to="projects" smooth={true} duration={500} offset={-60}>Projects</Link>
+          </li>
         </ul>
         <button
           onClick={toggleMenu}

@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaAngleDoubleDown } from "react-icons/fa";
+import { Element, Link } from "react-scroll";
 
 const Hero = () => {
 
@@ -60,19 +61,19 @@ const Hero = () => {
     //   duration: 1.5,
     // });
 
-    // gsap.to("#scroll-btn", {
-    //   y: 10,
-    //   repeat: -1,
-    //   yoyo: true,
-    //   duration: 1.5,
-    //   ease: "power1.inOut",
-    // });
+    gsap.to("#scroll-btn", {
+      y: 10,
+      repeat: -1,
+      yoyo: true,
+      duration: 1.5,
+      ease: "power1.inOut",
+    });
 
   });
 
   return (
     <>
-      <div className="hero-section w-full h-[70%] flex flex-col justify-center items-center p-3 mt-16">
+      <Element name="home" className="hero-section w-full h-[70%] flex flex-col justify-center items-center p-3 mt-16">
         <div
           className="w-full flex flex-col items-center justify-center p-5">
           <h1
@@ -104,12 +105,14 @@ const Hero = () => {
             rel="noopener noreferrer"
           ><FaGithub /></a>
         </div>
-      </div>
+      </Element>
       <button
         id="scroll-btn"
         className="block p-2 mx-auto text-3xl"
         type="button"
-      ><FaAngleDoubleDown /></button>
+      >
+        <Link to="skills" smooth={true} duration={500} offset={-60}><FaAngleDoubleDown /></Link>
+      </button>
     </>
   );
 };

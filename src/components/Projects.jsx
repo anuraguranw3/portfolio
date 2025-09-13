@@ -2,6 +2,7 @@ import { FaGithub } from "react-icons/fa";
 import { MdOpenInNew } from "react-icons/md";
 import project1 from "../assets/projects/656029.png";
 import project2 from "../assets/projects/688004.jpg";
+import { Element } from "react-scroll";
 
 const Projects = () => {
   const projects = [
@@ -62,7 +63,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="projects-section w-full mt-20 p-3 flex flex-col items-center">
+    <Element name="projects" className="projects-section w-full mt-20 p-3 flex flex-col items-center">
       <h3 className="text-3xl font-bold text-gray-400 pb-7">Projects</h3>
       <div className="w-full p-1 flex justify-evenly gap-5 flex-wrap">
         {
@@ -99,7 +100,7 @@ const Projects = () => {
           )
         }
       </div>
-    </div>
+    </Element>
   );
 };
 
